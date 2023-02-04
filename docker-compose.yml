@@ -6,7 +6,7 @@ services:
     volumes:
       - .:/var/www/html/
     ports: 
-      - 8000:80
+      - 8000:8000
   #python:
     #container_name: python
     #image: python:3.8
