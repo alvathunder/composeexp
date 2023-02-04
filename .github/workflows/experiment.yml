@@ -14,7 +14,7 @@ jobs:
 
     - name: docker
     
-      run: docker-compose up #--abort-on-container-exit
+      #run: docker-compose up #--abort-on-container-exit
       
       run: docker run --network http://localhost:8080/
 
