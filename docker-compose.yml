@@ -1,11 +1,16 @@
 version: '3.8'
+
 services:
-  apache:
-    container_name: php-apache
-    image: php:8.0-apache
-    volumes:
-      - .:/var/www/html/
-    ports: 
+  ubu:
+    container_name: ubuntu
+    image: ubuntu-latest
+    command: sudo apt-update && apt-upgrade
+   
+    php-apache
+    #image: php:8.0-apache
+    #volumes:
+    #  - .:/var/www/html/
+    #ports: 
       - 8000:80
       
   python:
