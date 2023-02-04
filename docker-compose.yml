@@ -3,7 +3,7 @@ version: '3.8'
 services:
   ubu:
     container_name: ubuntu
-    image: ubuntu-latest
+    image: ubuntu
     command: sudo apt-update && apt-upgrade
    
     #php-apache
