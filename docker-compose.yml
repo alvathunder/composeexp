@@ -7,6 +7,14 @@ services:
       - .:/var/www/html/
     ports: 
       - 8000:80
+      
+  python:
+    container_name: python
+    build: ./
+    command: python3 ./python.py
+  
+
+
   #python:
     #container_name: python
     #image: python:3.8
