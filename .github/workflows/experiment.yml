@@ -6,14 +6,14 @@ on: [push, workflow_dispatch]
 jobs:
 
   test:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps: 
     - name: Check out code
       uses: actions/checkout@v3
 
     - name: docker
-      run: docker-compose up #--abort-on-container-exit
+      run: echo docker-compose up #--abort-on-container-exit
 
     - name: print
       run: echo "All done!"
