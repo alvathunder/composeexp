@@ -4,6 +4,7 @@ services:
   ubu:
     container_name: ubuntu
     image: ubuntu
+    command: "/bin/bash"
     command: sudo apt-update && apt-upgrade
    
     #php-apache
